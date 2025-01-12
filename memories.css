@@ -1,0 +1,214 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+.content{
+    width: 400px;
+    overflow: hidden;
+    border-radius: 60px;
+    top: 0px;
+}
+.phone-frame{
+    width: 400px;
+    height: 98vh;
+    border-radius: 60px;
+    overflow: hidden;
+    border: 10px solid black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.camera{
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: black;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h1{
+    color: #5d576a;
+    padding: 16px;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 55px;
+    padding-bottom: 0;
+}
+h4{
+    color: #5d576a;
+}
+.container{
+    background-color: #F0F0F0;
+    border-radius: 25px;
+    margin: 32px;
+    padding: 16px;
+    box-shadow:  0 1px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.day{
+    font-size: smaller;
+    color: #868091;
+}
+.cards-container-october{
+    display: grid; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 16px;
+    gap: 16px;
+    margin-top: 10px;
+}
+.cards-container-november{
+    display: grid; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 16px;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.cards-container-december{
+    display: grid; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 16px;
+    gap: 16px;
+    margin-top: 10px;
+}
+.card{
+    width: 30px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: grey;
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card a{
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+.card a:hover{
+    cursor: pointer;
+}
+.container .cards-container .card1,
+.container .cards-container .card2,
+.container .cards-container .card28,
+.container .cards-container .card27{
+    visibility: hidden; 
+}
+nav{
+    width: 360px;
+    height: 60px;
+    background-color: #fefefe;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    padding: 20px 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.25);
+    padding: 0;
+    margin: 0;
+    position: fixed;
+}
+
+.nav-line{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.nav-item{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    width: 100%;    
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+.nav-item .nav-icon {
+    width: auto; 
+    height: 24px; 
+    padding-bottom: 10px;
+  }
+
+.nav-item span{
+    flex-direction: column;
+    color: #5D576A;
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+.new-item{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #E6EBE0;
+    border: #fefefe solid 10px;
+    position: relative; /* Enable relative positioning */
+    top: -20px; /* Move the circle up by 20px */
+    z-index: 1; /* Ensure the circle is above other elements */
+    text-decoration: none;
+}
+
+.new-item .plus-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.days-of-week{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: lighter;
+    font-size: smaller;
+}
+.days-of-week span{
+    min-width: 30px;
+    text-align: center;
+    color: #5E576B;
+}
+.content svg{
+    position: relative;
+    top: 42px;
+    left: 22px;
+    color: #5d576a;
+}
