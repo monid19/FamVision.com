@@ -37,31 +37,33 @@
 <nav>
     <div class="nav-line">
     
-    <a href="#prompts" class="nav-item">
-        <img src="images/prompts.PNG" alt="Prompts" class="nav-icon">
+    <a href="prompts.html" class="nav-item">
+        <img src="prompts.png" alt="Prompts" class="nav-icon">
         <span>Prompts</span>
     </a>
-    <a href="#home" class="nav-item">
-        <img src="images/home.PNG" alt="Home" class="nav-icon">
+    <a href="index.html" class="nav-item">
+        <img src="home.png" alt="Home" class="nav-icon">
         <span>Home</span>
     </a>
 
-    <a href="#new" class="new-item">
+    <a href="index.html" class="new-item">
         <i class="fas fa-plus plus-icon"></i>
     </a>
 
-    <a href="#profile" class="nav-item">
-        <img src="images/profile.PNG" alt="Profile" class="nav-icon">
+    <a href="profile.html" class="nav-item">
+        <img src="profile.png" alt="Profile" class="nav-icon">
         <span>Profile</span>
     </a>
-    <a href="#achievements" class="nav-item">
-        <img src="images/achievements.PNG" alt="Achievements" class="nav-icon">
+    <a href="achievements.html" class="nav-item">
+        <img src="achievements.png" alt="Achievements" class="nav-icon">
         <span>Achievements</span>
     </a>
     </div>
 </nav>
            
-
+<div class="phone-frame">
+    <div class="camera"></div>
+</div>
          
 
               <div class="popup-overlay" id="popup-overlay">
@@ -76,7 +78,7 @@
           <script>
              const prompts = {
             school: [
-                "michael is doing his best ?",
+                "what do you want to study in university ?",
                 "Who was your most memorable teacher?",
                 "What's your best school memory?",
                 "What's the most valuable lesson you learned in school?",
@@ -177,6 +179,8 @@ document.querySelectorAll('.category').forEach(button => {
         document.querySelectorAll('.category').forEach(b => b.classList.remove('active'));
         button.classList.add('active');
         currentCategory = button.id.split('-')[0];//extracts the catergory from the prefix by spliting the string at the hyphen
+        showPopupOnUpdate = false;
+        updatePrompts();
       
     });
 });

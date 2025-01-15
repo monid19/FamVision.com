@@ -15,7 +15,18 @@ header{
   font-size: 24px;
   text-align: left;
 }
-
+.phone-frame{
+  width: 400px;
+  height: 98vh;
+  border-radius: 60px;
+  overflow: hidden;
+  border: 10px solid black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
 .categories {
   display: flex;
   justify-content: center;
@@ -84,6 +95,7 @@ header{
 .prompt-box.left, .prompt-box.right {
   opacity: 0.6;
   transform: scale(0.9);
+  filter: blur(6px);
 }
 
 .prompt-box.center {
